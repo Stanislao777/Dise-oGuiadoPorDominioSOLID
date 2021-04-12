@@ -7,6 +7,9 @@ class Estudiante
 	private int gestion;
 	private double nota;
 
+	public string Nombre {get => nombre; set => nombre = value; }
+	public string Parelelo {get => paralelo; set => paralelo = value; }
+
 	public Estudiante(string pNombre, string pParalelo, int pGestion, double pNota)
 	{
 		nombre = pNombre;
@@ -14,10 +17,7 @@ class Estudiante
 		gestion = pGestion;
 		nota = pNota;
 	}
-
-	//public string Nombre {get => nombre; set => nombre = value};
-	//public string Parelelo {get => paralelo; set => paralelo = value};
-
+	
 	public override string ToString()
 	{
 		return string.Format("{0},{1},{2},{3}", nombre, paralelo, gestion, nota);
