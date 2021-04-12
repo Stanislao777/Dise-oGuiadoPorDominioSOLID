@@ -18,8 +18,8 @@ class MainClass {
 		new Estudiante("Juan","Arqui1", 2021 ,2, 8.2)	
 	};
 
-	Practica miPractica = new Practica(estudiantes);
+	Evaluacion miEvaluacion = new Evaluacion(estudiantes);
 
-	miPractica.calcularPracticas();	
+	miEvaluacion.calcularEvaluacion();	
   }
 }

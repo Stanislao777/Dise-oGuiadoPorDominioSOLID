@@ -1,29 +1,29 @@
 using System;
 using System.Collections.Generic;
 
-class Practica
+class Evaluacion
 {
 	private List<Estudiante> estudiantes;
 
-	public Practica(List<Estudiante> pEstudiantes)
+	public Evaluacion(List<Estudiante> pEstudiantes)
 	{
 		estudiantes = pEstudiantes;
 	}
 
-	public void calcularPracticas()
+	public void calcularEvaluacion()
 	{
 		double total = 0;
 
 		foreach (Estudiante estudiante in estudiantes)
 		{
-			if (estudiante.Practica == 1)
+			if (estudiante.Evaluacion == 1)
 			{
 				Console.ForegroundColor = ConsoleColor.Green;
 				estudiante.Nota *= 0.8;
 				Console.WriteLine(estudiante);
 				total += estudiante.Nota;
 			}
-			if (estudiante.Practica == 2)
+			if (estudiante.Evaluacion == 2)
 			{
 				Console.ForegroundColor = ConsoleColor.Yellow;
 				estudiante.Nota *= 1.2;
@@ -32,6 +32,6 @@ class Practica
 			}
 		}
 
-		Console.WriteLine("\nEl total de las notas de las practicas es {0}", total);
+		Console.WriteLine("\nEl total de las notas de las evaluadas son {0}", total);
 	}
 }
