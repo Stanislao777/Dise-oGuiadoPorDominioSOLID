@@ -13,9 +13,9 @@ class MainClass {
 	List<Estudiante> estudiantes = new List<Estudiante>
 	{
 		new Estudiante("Jose","Arqui1", 2021, 1, 10.5),
-		new Estudiante("Pedro","Arqui1", 2021,1, 5.7),
+		new Estudiante("Jose","Arqui1", 2021, 2, 5.7),
 		new Estudiante("Juan","Arqui1", 2021, 1, 7.5),
-		new Estudiante("Maria","Arqui1", 2021 ,1, 8.2)	
+		new Estudiante("Juan","Arqui1", 2021 ,2, 8.2)	
 	};
 
 	Practica miPractica = new Practica(estudiantes);
