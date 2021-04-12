@@ -8,7 +8,7 @@ class Estudiante
 	private double nota;
 
 	public string Nombre {get => nombre; set => nombre = value; }
-	public string Parelelo {get => paralelo; set => paralelo = value; }
+	public double Nota {get => nota; set => nota = value; }
 
 	public Estudiante(string pNombre, string pParalelo, int pGestion, double pNota)
 	{
@@ -21,16 +21,5 @@ class Estudiante
 	public override string ToString()
 	{
 		return string.Format("{0},{1},{2},{3}", nombre, paralelo, gestion, nota);
-	}
-
-	public double CalcularPuntosExtra()
-	{
-		return nota * 0.5;
-	}
-
-	public void AsignarNota()
-	{
-		double puntExt = CalcularPuntosExtra();
-		Console.WriteLine("Se anadio {0} en nota por parte de {1}", puntExt, nombre);
-	}
+	}	
 }
