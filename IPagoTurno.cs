@@ -1,4 +1,0 @@
-interface IPagoTurno
-{
-    double getPago();
-}
