@@ -1,0 +1,4 @@
+interface IServicioCalculoPesoLaboral
+{
+    string getPeso();
+}

@@ -1,26 +1,16 @@
-using System;
-using System.Collections.Generic;
-
-class Evaluacion
+abstract class Evaluacion
 {
-	private List<BaseEvaluacion> estudiantes;
+    protected double nota;
 
-	public Evaluacion(List<BaseEvaluacion> pEstudiantes)
-	{
-		estudiantes = pEstudiantes;
-	}
+    public Evaluacion(double nota)
+    {
+        this.nota = nota;
+    }
 
-	public void calcularEvaluacion()
-	{
-		double total = 0;
+    public double getNota()
+    {
+        return nota;
+    }
 
-		foreach (var estudiante in estudiantes)
-		{
-			estudiante.CalcularNota();
-			Console.WriteLine(estudiante);
-			total += estudiante.Estudiante.Nota;	
-		}
-
-		Console.WriteLine("\nEl total de las notas de las evaluadas son {0}", total);
-	}
+    public abstract void mostrarDetalles();
 }
